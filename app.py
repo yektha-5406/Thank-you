@@ -12,7 +12,7 @@ html_code = """
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background:#6a5acd;
+        background:pink;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -58,7 +58,7 @@ html_code = """
 
 <div class="card">
     <h1>Hey 😊</h1>
-    <p id="text">I have something to tell you...</p>
+    <p id="text">I wanna tell you smthng...</p>
     <button onclick="nextStep()">Click Me</button>
 </div>
 
@@ -74,7 +74,10 @@ function nextStep() {
     else if(step === 1) {
         text.innerHTML = "Because of you, I learned how to create an app 😄. I'll always remember you";
     }
-    else if(step === 2) {
+     else if(step === 2) {
+        text.innerHTML = "This is the first tym I'm creating that Too for u ";
+    }
+    else if(step === 3) {
         text.innerHTML = "<b>THANK YOU 💖 for teaching me how to create an App!</b>";
         confettiEffect();
     }
