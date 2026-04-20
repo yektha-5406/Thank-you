@@ -58,7 +58,7 @@ html_code = """
 
 <div class="card">
     <h1>Hey 😊</h1>
-    <p id="text">I wanna tell you smthng...</p>
+    <p id="text">I wanna tell you smthng 🤫...</p>
     <button onclick="nextStep()">Click Me</button>
 </div>
 
@@ -69,16 +69,16 @@ function nextStep() {
     const text = document.getElementById("text");
 
     if(step === 0) {
-        text.innerHTML = "You really helped me a lot 💡";
+        text.innerHTML = "You really helped me a lot 🤗";
     }
     else if(step === 1) {
-        text.innerHTML = "Because of you, I learned how to create an app 😄. I'll always remember you";
+        text.innerHTML = "Because of you, I learned how to create an app 😄. I'll always remember you ☺️";
     }
      else if(step === 2) {
-        text.innerHTML = "This is the first tym I'm creating that Too for u ";
+        text.innerHTML = "This is the first tym I'm creating... That Too for u 🫶";
     }
     else if(step === 3) {
-        text.innerHTML = "<b>THANK YOU 💖 for teaching me how to create an App!</b>";
+        text.innerHTML = "<b>THANK YOU 💖 for teaching me how to create an App!😊</b>";
         confettiEffect();
     }
 
