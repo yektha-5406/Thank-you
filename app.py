@@ -77,12 +77,10 @@ function nextStep() {
      else if(step === 2) {
         text.innerHTML = "This is the first tym I'm creating... That Too for u 🫶";
     }
-    else if(step === 3) {
-        text.innerHTML = "<b>THANK YOU 💖 for teaching me how to create an App!😊</b>";
-        confettiEffect();
-    }
+   
 
     step++;
+    <p> THANK YOU 💖 for teaching me how to create an App!😊</P>
 }
 
 function confettiEffect() {
