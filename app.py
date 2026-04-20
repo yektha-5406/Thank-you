@@ -1,9 +1,12 @@
+import streamlit as st
+
+html_code = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You </title>
+<title>Thank You</title>
 
 <style>
     body {
@@ -13,12 +16,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-       
+        height: 100vh;
     }
 
     .card {
         background: white;
-        padding: 9px;
+        padding: 20px;
         border-radius: 25px;
         width: 350px;
         text-align: center;
@@ -28,12 +31,6 @@
 
     h1 {
         color: #6a5acd;
-        margin-bottom: 10px;
-    }
-
-    p {
-        font-size: 16px;
-        color: #444;
     }
 
     button {
@@ -43,23 +40,16 @@
         border-radius: 25px;
         background: #6a5acd;
         color: white;
-        font-size: 16px;
         cursor: pointer;
-        transition: 0.3s;
     }
 
     button:hover {
         background: #483d8b;
-        transform: scale(1.05);
     }
 
     @keyframes fadeIn {
         from {opacity: 0; transform: translateY(20px);}
         to {opacity: 1; transform: translateY(0);}
-    }
-
-    .hidden {
-        display: none;
     }
 </style>
 </head>
@@ -82,7 +72,7 @@ function nextStep() {
         text.innerHTML = "You really helped me a lot 💡";
     }
     else if(step === 1) {
-        text.innerHTML = "Because of you, I learned how to create an app 😄.I'll always remember u";
+        text.innerHTML = "Because of you, I learned how to create an app 😄. I'll always remember you";
     }
     else if(step === 2) {
         text.innerHTML = "<b>THANK YOU 💖 for teaching me how to create an App!</b>";
@@ -107,16 +97,14 @@ function confettiEffect() {
 
         document.body.appendChild(conf);
 
-        setTimeout(() => {
-            conf.style.top = "100vh";
-        }, 10);
-
-        setTimeout(() => {
-            conf.remove();
-        }, 2000);
+        setTimeout(() => conf.style.top = "100vh", 10);
+        setTimeout(() => conf.remove(), 2000);
     }
 }
 </script>
 
 </body>
 </html>
+"""
+
+st.components.v1.html(html_code, height=650, scrolling=False)
