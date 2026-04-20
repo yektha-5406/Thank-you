@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You 💖</title>
+<title>Thank You </title>
 
 <style>
     body {
@@ -82,7 +82,7 @@ function nextStep() {
         text.innerHTML = "You really helped me a lot 💡";
     }
     else if(step === 1) {
-        text.innerHTML = "Because of you, I learned how to create an app 😄";
+        text.innerHTML = "Because of you, I learned how to create an app 😄.I'll always remember u";
     }
     else if(step === 2) {
         text.innerHTML = "<b>THANK YOU 💖 for teaching me how to create an App!</b>";
